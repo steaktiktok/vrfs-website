@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VRFS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- NAVBAR -->
+    <nav class="bg-gray-800 p-4 flex gap-6 text-lg">
+        <a href="/" class="hover:text-blue-400">Home</a>
+        <a href="/league" class="hover:text-blue-400">League Table</a>
+        <a href="/fixtures" class="hover:text-blue-400">Fixtures</a>
+        <a href="/teams" class="hover:text-blue-400">Teams</a>
+        <a href="/squads" class="hover:text-blue-400">Squads</a>
+        <a href="/transfers" class="hover:text-blue-400">Transfers</a>
+        <a href="/admin" class="hover:text-red-400 ml-auto">Admin Panel</a>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="p-8">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>

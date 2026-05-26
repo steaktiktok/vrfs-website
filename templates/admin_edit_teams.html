@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-6">Edit Teams JSON</h1>
+
+<form method="post">
+    <textarea name="teams_json" rows="25" class="w-full p-4 bg-gray-800 text-white rounded">{{ teams | tojson(indent=2) }}</textarea>
+    <button class="mt-4 bg-blue-600 px-6 py-2 rounded hover:bg-blue-700">Save</button>
+</form>
+
+{% endblock %}

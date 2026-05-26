@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-6">Transfers (Admin)</h1>
+
+<div class="bg-[#1a1d22] p-6 rounded-xl shadow">
+    <pre class="text-gray-300">{{ transfers | tojson(indent=2) }}</pre>
+</div>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1 class="text-4xl font-bold mb-8">Admin Dashboard</h1>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- Stats -->
+    <a href="/admin/stats" class="bg-[#1a1d22] p-6 rounded-xl shadow hover:bg-[#22262c] transition">
+        <h2 class="text-2xl font-semibold mb-2">Stats</h2>
+        <p class="text-gray-400">View and manage VRFS statistics.</p>
+    </a>
+
+    <!-- Market -->
+    <a href="/admin/market" class="bg-[#1a1d22] p-6 rounded-xl shadow hover:bg-[#22262c] transition">
+        <h2 class="text-2xl font-semibold mb-2">Market</h2>
+        <p class="text-gray-400">Manage transfers, loans, and player values.</p>
+    </a>
+
+    <!-- League -->
+    <a href="/admin/league" class="bg-[#1a1d22] p-6 rounded-xl shadow hover:bg-[#22262c] transition">
+        <h2 class="text-2xl font-semibold mb-2">League</h2>
+        <p class="text-gray-400">Edit standings, fixtures, and results.</p>
+    </a>
+
+    <!-- Teams -->
+    <a href="/admin/teams" class="bg-[#1a1d22] p-6 rounded-xl shadow hover:bg-[#22262c] transition">
+        <h2 class="text-2xl font-semibold mb-2">Teams</h2>
+        <p class="text-gray-400">Manage teams, managers, and divisions.</p>
+    </a>
+
+<a href="/admin/trophies" class="bg-[#1a1d22] p-6 rounded-xl shadow hover:bg-[#22262c] transition">
+    <h2 class="text-2xl font-semibold mb-2">Trophies</h2>
+    <p class="text-gray-400">Manage seasonal awards and team honours.</p>
+</a>
+
+</div>
+
+{% endblock %}
